@@ -2,14 +2,25 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background: var(--background);
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+
+  @media screen and (max-width: 1200px) {
+    text-align: center;
+  }
+}
+
+.footer-tablet {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
 }
 
 .address-block {
-  flex-grow: 1;
   margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    flex-grow: 1;
+  }
 }
 
 .adres__item:not(:last-child) {
@@ -26,12 +37,36 @@
   letter-spacing: 0.03em;
   color: var(--white-color-text);
 }
+
 .adres__link-contacts {
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--address-links-footer);
+}
+
+.blocks {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.soc-block {
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    // margin: 0;
+    margin-left: 70px;
+    // width: 206px;
+    // height: 80px;
+  }
+}
+
+.soc-block-list {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .soc-block .title {
@@ -46,19 +81,17 @@
   color: var(--white-color-text);
 }
 
-.soc-block {
-  margin-bottom: 60px;
-}
-
 .soc-block .blocks {
-  // display: flex;
-  // align-items: baseline;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .subscription-block {
   // margin-left: 93px;
   .title {
-    margin: 0;
+    margin: 0 auto;
     display: block;
     margin-bottom: 20px;
     font-weight: 700;
@@ -69,12 +102,17 @@
 
     color: var(--white-color-text);
   }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
 .footer-form {
-  // width: 570px;
-  height: 86px;
-  // display: flex;
+  @media screen and (min-width: 1200px) {
+    width: 570px;
+    height: 86px;
+    display: flex;
+  }
 }
 .footer-field {
   margin-bottom: 20px;
@@ -83,7 +121,7 @@
 .footer-field input {
   width: 100%;
   height: 50px;
-  // margin-right: 12px;
+
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -99,26 +137,28 @@
     font-size: 16px;
     line-height: 1.25;
 
-    // display: inline-flex;
     align-items: center;
     letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
+    @media screen and (min-width: 1200px) {
+      display: inline-flex;
+    }
   }
   @media screen and (min-width: 480px) {
     width: 450px;
   }
   @media screen and (min-width: 1200px) {
     width: 358px;
+    margin-right: 12px;
   }
 }
 
 .footer-form-btn {
-  // position: relative;
   width: 200px;
   height: 50px;
-  // margin-left: auto;
-  // margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 10px 29px;
   display: flex;
   text-align: center;
@@ -139,6 +179,9 @@
   border-radius: 4px;
   border: none;
   cursor: pointer;
+  @media screen and (min-width: 1200px) {
+    position: relative;
+  }
 }
 
 .send-btn {
@@ -148,17 +191,17 @@
 }
 
 // .soc-block__list {
-//   // display: flex;
+//   //   // display: flex;
 // }
 
 // .soc-block {
-//   // margin: 0;
-//   // margin-left: 70px;
-//   // width: 206px;
+//   margin: 0;
+//   margin-left: 70px;
+//   width: 206px;
 //   height: 80px;
 // }
 // .soc-block__item + .soc-block__item {
-//   // margin-left: 10px;
+//   margin-left: 10px;
 // }
 // .soc-block__link {
 //   width: 44px;
