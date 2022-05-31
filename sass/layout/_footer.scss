@@ -12,7 +12,10 @@
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-around;
-    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
   }
 }
 
@@ -20,6 +23,7 @@
   margin-bottom: 60px;
   @media screen and (min-width: 1200px) {
     flex-grow: 1;
+    margin: 0;
   }
 }
 
@@ -30,7 +34,6 @@
   }
 }
 .adres__link {
-  // margin-bottom: 8px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -50,16 +53,15 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
+    justify-content: center;
   }
 }
 
 .soc-block {
   margin-bottom: 60px;
   @media screen and (min-width: 1200px) {
-    // margin: 0;
+    margin: 0;
     margin-left: 70px;
-    // width: 206px;
-    // height: 80px;
   }
 }
 
@@ -69,7 +71,7 @@
   }
 }
 
-.soc-block .title {
+.soc-block__title {
   margin: 0;
   margin-bottom: 20px;
 
@@ -81,7 +83,7 @@
   color: var(--white-color-text);
 }
 
-.soc-block .blocks {
+.soc-block--blocks {
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
@@ -89,8 +91,7 @@
 }
 
 .subscription-block {
-  // margin-left: 93px;
-  .title {
+  &.title {
     margin: 0 auto;
     display: block;
     margin-bottom: 20px;
@@ -116,6 +117,9 @@
 }
 .footer-field {
   margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+  }
 }
 
 .footer-field input {
@@ -189,52 +193,3 @@
   height: 24px;
   margin-left: 10px;
 }
-
-// .soc-block__list {
-//   //   // display: flex;
-// }
-
-// .soc-block {
-//   margin: 0;
-//   margin-left: 70px;
-//   width: 206px;
-//   height: 80px;
-// }
-// .soc-block__item + .soc-block__item {
-//   margin-left: 10px;
-// }
-// .soc-block__link {
-//   width: 44px;
-//   height: 44px;
-//   border-radius: 50%;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   background-color: rgba(255, 255, 255, 0.1);
-
-//   transition-property: background-color;
-//   transition-duration: 250ms;
-//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//   &:hover,
-//   &:focus {
-//     background-color: var(--accent-color);
-//   }
-// }
-
-// .soc-block .title {
-//   margin: 0;
-//   margin-bottom: 20px;
-
-//   font-weight: 700;
-//   font-size: 14px;
-//   line-height: 16px;
-//   letter-spacing: 0.03em;
-//   text-transform: uppercase;
-//   color: var(--white-color-text);
-// }
-
-// .soc-block__icons {
-//   width: 20px;
-//   height: 20px;
-//   fill: var(--white-color-text);
-// }
