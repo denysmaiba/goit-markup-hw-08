@@ -1,15 +1,18 @@
+/* index.html */
 .header {
   border-bottom: 1px solid #ececec;
+
   background-color: var(--white-color);
 }
 .header__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  // padding: 16px 0px;
+  @media screen and (max-width: 767.98px) {
+    position: relative;
+    padding: 16px 15px;
+  }
 
-  @media screen and (max-width: 768px) {
-    padding: 16px 0px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -29,11 +32,108 @@
   }
 }
 
-.feedback {
-  display: none;
-  // @media screen and (min-width: 768px) {
-  //   display: none;
+.logo__dark {
+  color: var(--primary-text-color);
+}
+
+.navigation {
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    // display: flex;
+
+    // justify-content: center;
+    margin-left: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+}
+.nav {
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    justify-content: center;
+    // margin-left: 88px;
+  }
+  // @media screen and (min-width: 1200px) {
+  //   margin-left: 93px;
   // }
+}
+
+.nav-mob {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.nav__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+    // margin-bottom: 32px;
+  }
+  @media screen and (max-width: 767.98px) {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.nav__link {
+  position: relative;
+  transition: color 250ms var(--cubic);
+
+  display: block;
+
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+
+  letter-spacing: 0.02em;
+
+  @media screen and (max-width: 767.98px) {
+    &--current {
+      color: var(--accent-color);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 32px 0;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  @media screen and (min-width: 768px) {
+    &--current {
+      color: var(--accent-color);
+      &::after {
+        position: absolute;
+        content: '';
+        // min-width: 48px;
+        height: 4px;
+        left: 0;
+        right: 0;
+        bottom: -1px;
+
+        background: #2196f3;
+        border-radius: 2px;
+      }
+    }
+  }
+}
+
+.feedback {
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
 
   @media screen and (min-width: 768px) {
     display: block;
@@ -79,7 +179,6 @@
     }
   }
 }
-
 .feedback__link {
   transition: color 250ms var(--cubic), fill 250ms var(--cubic);
 

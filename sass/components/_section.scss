@@ -7,18 +7,23 @@
     padding-bottom: 94px;
   }
 }
+
 .section--no-padding-top {
-  padding-top: 0;
-  @media screen and (max-width: 1200px) {
+  padding-top: 0px;
+
+  @media screen and (max-width: 1199.98px) {
     display: none;
   }
+}
+.section--other-background {
+  background-color: var(--bgc-color);
 }
 
 .section__title {
   margin-top: 0;
   margin-bottom: 30px;
 
-  color: var(--main-color);
+  color: var(--primary-text-color);
 
   font-size: 28px;
   line-height: 1.18;
@@ -29,8 +34,4 @@
     line-height: 1.17;
     margin-bottom: 50px;
   }
-}
-
-.section--bacground-color {
-  background-color: var(--bacground-team);
 }
