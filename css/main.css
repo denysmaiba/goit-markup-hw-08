@@ -1320,12 +1320,12 @@ img {
 }
 
 @media screen and (max-width: 767.98px) {
-  .footer-box-one {
+  .footer-box-first {
     margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .footer-box-one {
+  .footer-box-first {
     display: inline-block;
     justify-content: space-between;
     align-items: center;
@@ -1333,14 +1333,14 @@ img {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .footer-box-two {
+  .footer-box-second {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer-box-two {
+  .footer-box-second {
     margin-left: 70px;
   }
 }
